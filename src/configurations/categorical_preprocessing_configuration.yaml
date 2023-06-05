@@ -1,0 +1,39 @@
+variables:
+  ids: ["PB030"]
+  ordinal: ["PE040", "PH010", "PW010", "PW020", "PW030", 
+            "PW040", "PW120", "PW130", "PW140", "PW150",
+            "PW160", "PW190", "PW200", "PW210", "PW050", 
+            "PW060", "PW070", "PW080", "PW090", "PW220"]
+  categorical_ordinal: []
+  categorical_nominal: ["PE040", "PH010", "PW010", "PW020", "PW030", 
+                        "PW040", "PW120", "PW130", "PW140", "PW150",
+                        "PW160", "PW190", "PW200", "PW210", "PW050", 
+                        "PW060", "PW070", "PW080", "PW090", "PW220",
+                        "PB190", "PD020", "PD030", "PD050", "PD060", 
+                        "PD070", "PD080", "PH030", "PH040", "PH060",
+                        "PL031", "PL040"]
+  binary_original: ["PB150", "PH020", "PW170", "PW180"]
+  binary_optional: ["isFemale", "hasIllness", "hasFriend", "getHelp"]
+  numerical_float: ["PY010G", "PY020G", "PY021G", "PY030G", "PY035G",
+                    "PY050G","PY080G", "PY090G", "PY100G", "PY110G",
+                    "PY120G", "PY130G", "PY140G"]
+  numerical_int: ["PB140"]
+  income: ["PY010G", "PY020G", "PY021G", "PY030G", "PY035G", "PY050G"]
+  benefits: ["PY080G", "PY090G", "PY100G", "PY110G", "PY120G",
+             "PY130G", "PY140G"]
+  new_binary_variables: ["hasIncome", "hasBenefits"]
+  new_scale_variables: []
+  new_categorical_variables: ["Age", "householdSize"]
+  missing_99: ["PW010", "PW020", "PW030", "PW040",  "PW120", "PW130",
+               "PW140", "PW150", "PW160",  "PW190", "PW200", "PW210"]
+  missing_9: ["PW050", "PW060", "PW070", "PW080", "PW090", "PW170",
+              "PW180", "PW220"]
+  not_impute: ["PB030", "PB140", "PB150", "householdSize", "isFemale"]
+  remove_one_hots: ["Age_5", "PB190_4", "PD020_3", "PD030_3", "PD050_2", "PD060_2",
+                    "PD070_3", "PD080_2", "PH030_1", "PH040_1", "PH060_1", "PL031_9",
+                    "PL040_4", "PW010_0", "PW020_0", "PW030_0", "PW040_0", "PW050_1",
+                    "PW060_1", "PW070_5", "PW080_1", "PW090_5", "PW120_0", "PW130_10",
+                    "PW140_1", "PW150_0", "PW160_0", "PW190_1", "PW210_4", "PW220_4",
+                    "householdSize_5"]
+limit: 0.5
+analysis: "Categorical"

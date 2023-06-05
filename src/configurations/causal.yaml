@@ -1,0 +1,27 @@
+globals:
+  name: "causal"
+  model_name: ["forestDML"]
+  model_type: "categorical"
+  
+model:
+  epochs: 250
+  batch_size: 128
+  learning_rate: [1e-4]
+  node_layers: [[100, 150]]
+  dense_activation: ["leaky_relu"]
+  latent_dimensions: [150]
+  pretrained: 1.0
+  nmce_31_file: "models/nmce/nmce_model_RUN_31_1929_78.7082977_21.1589699_0.9756294scripted.pt"
+  nmce_33_file: "models/nmce/nmce_model_RUN_33_1929_116.4432983_29.3219929_0.9602476scripted.pt"
+  latent_gan: 50
+  latent_vae: 50
+  beta1: 0.5
+  beta2: 0.9
+  lr_gan: 1e-4
+  lr_vae: 1e-4
+  generator_dict_file: "models/wgan/gp-generator_lr_0.0001_epochs_250_c-iter_5_leaky_02__output_dim_1__feature_dim_230_lat_dim_50_optimiser_Adam.pth"
+  opt_gen_dict_file: "models/wgan/Adam_generator_lr_0.0001_0.5_0.9_feature_dim_230_lat_dim_50.pth"
+  critic_dict_file: "models/wgan/gp-critic_lr_0.0001_epochs_250_c-iter_5_leaky_02__feature_dim_230_lat_dim_50_output_dim_1__optimiser_Adam.pth"
+  opt_critic_dict_file: "models/wgan/Adam_critic_lr_0.0001_0.5_0.9_feature_dim_230_lat_dim_50_.pth"
+  vae_dict_file: "models/vae/betavae_lr_0.0001_epochs_80_batch_91_leaky_02__beta_0.5_feature_dim_230_lat_dim_50_optimiser_RMSprop.pth"
+  opt_vae_dict_file: "models/vae/RMSprop_lr_0.0001_epochs_80_feature_dim_230_lat_dim_50.pth"

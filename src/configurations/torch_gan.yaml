@@ -1,0 +1,34 @@
+globals:
+  name: "gan"
+  model_name: ["fin-15", "fin-30", "fin-50", "fin-100"]
+  model_type: "categorical"
+  
+model:
+  epochs: [50, 100, 150, 250]
+  batch_size: 115
+  learning_rate: [1e-4]
+  node_layers: [[100, 150]]
+  dense_activation: ["leaky_relu"]
+  latent_dimensions: [15, 30, 50, 100]
+  critic_iterations: 5
+  lambda_gp: 10.0
+  beta1: 0.5
+  beta2: 0.9
+  optimiser_name: "Adam"
+  pretrained: 1.0
+  generator_dict_file_15: "models/wgan/fin/gp-generator_lr_0.0001_epochs_50_c-iter_5_leaky_02__output_dim_1_feature_dim_230_lat_15_optimiser_Adam.pth"
+  opt_gen_dict_file_15: "models/wgan/fin/Adam_generator_lr_0.0001_0.5_0.9_feature_dim_230_lat_dim_15.pth"
+  critic_dict_file_15: "models/wgan/fin/gp-critic_lr_0.0001_epochs_50_c-iter_5_leaky_02_feature_dim_230_lat_dim_15_output_dim_1__optimiser_Adam.pth"
+  opt_critic_dict_file_15: "models/wgan/fin/Adam_critic_lr_0.0001_0.5_0.9_feature_dim_230_lat_dim_15_.pth"
+  generator_dict_file_30: "models/wgan/fin/gp-generator_lr_0.0001_epochs_100_c-iter_5_leaky_02__output_dim_1_feature_dim_230_lat_30_optimiser_Adam.pth"
+  opt_gen_dict_file_30: "models/wgan/fin/Adam_generator_lr_0.0001_0.5_0.9_feature_dim_230_lat_dim_30.pth"
+  critic_dict_file_30: "models/wgan/fin/gp-critic_lr_0.0001_epochs_100_c-iter_5_leaky_02_feature_dim_230_lat_dim_30_output_dim_1__optimiser_Adam.pth"
+  opt_critic_dict_file_30: "models/wgan/fin/Adam_critic_lr_0.0001_0.5_0.9_feature_dim_230_lat_dim_30_.pth"
+  generator_dict_file_50: "models/wgan/fin/gp-generator_lr_0.0001_epochs_150_c-iter_5_leaky_02__output_dim_1_feature_dim_230_lat_50_optimiser_Adam.pth"
+  opt_gen_dict_file_50: "models/wgan/fin/Adam_generator_lr_0.0001_0.5_0.9_feature_dim_230_lat_dim_50.pth"
+  critic_dict_file_50: "models/wgan/fin/gp-critic_lr_0.0001_epochs_150_c-iter_5_leaky_02_feature_dim_230_lat_dim_50_output_dim_1__optimiser_Adam.pth"
+  opt_critic_dict_file_50: "models/wgan/fin/Adam_critic_lr_0.0001_0.5_0.9_feature_dim_230_lat_dim_50_.pth"
+  generator_dict_file_100: "models/wgan/fin/gp-generator_lr_0.0001_epochs_250_c-iter_5_leaky_02__output_dim_1_feature_dim_230_lat_100_optimiser_Adam.pth"
+  opt_gen_dict_file_100: "models/wgan/fin/Adam_generator_lr_0.0001_0.5_0.9_feature_dim_230_lat_dim_100.pth"
+  critic_dict_file_100: "models/wgan/fin/gp-critic_lr_0.0001_epochs_250_c-iter_5_leaky_02_feature_dim_230_lat_dim_100_output_dim_1__optimiser_Adam.pth"
+  opt_critic_dict_file_100: "models/wgan/fin/Adam_critic_lr_0.0001_0.5_0.9_feature_dim_230_lat_dim_100_.pth"

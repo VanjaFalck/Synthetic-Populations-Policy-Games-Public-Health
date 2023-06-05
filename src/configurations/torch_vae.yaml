@@ -1,0 +1,25 @@
+globals:
+  name: "vae"
+  model_name: ["fin-15", "fin-30", "fin-50", "fin-100"]
+  model_type: "categorical"
+  
+model:
+  epochs: [40, 50, 80, 100]
+  batch_size: 115
+  learning_rate: [1e-4]
+  node_layers: [[100, 50], [50, 25]]
+  dense_activation: ["leaky_relu"]
+  latent_dimensions: [15, 30, 50, 100]
+  beta: 0.5
+  optimiser_name: "RMSprop"
+  pretrained: 1
+  model_dict_file_15: "models/vae/fin/betavae_lr_0.0001_epochs_40_batch_115_leaky_02_beta_0.5_feature_dim_230_lat_dim_15_optimiser_RMSprop.pth"
+  opt_dict_file_15: "models/vae/fin/RMSprop_lr_0.0001_epochs_40_feature_dim_230_lat_dim_15.pth"
+  model_dict_file_30: "models/vae/fin/betavae_lr_0.0001_epochs_50_batch_115_leaky_02_beta_0.5_feature_dim_230_lat_dim_30_optimiser_RMSprop.pth"
+  opt_dict_file_30: "models/vae/fin/RMSprop_lr_0.0001_epochs_50_feature_dim_230_lat_dim_30.pth"
+  model_dict_file_50: "models/vae/fin/betavae_lr_0.0001_epochs_80_batch_115_leaky_02_beta_0.5_feature_dim_230_lat_dim_50_optimiser_RMSprop.pth"
+  opt_dict_file_50: "models/vae/fin/RMSprop_lr_0.0001_epochs_80_feature_dim_230_lat_dim_50.pth"
+  model_dict_file_100: "models/vae/fin/betavae_lr_0.0001_epochs_100_batch_115_leaky_02_beta_0.5_feature_dim_230_lat_dim_100_optimiser_RMSprop.pth"
+  opt_dict_file_100: "models/vae/fin/RMSprop_lr_0.0001_epochs_100_feature_dim_230_lat_dim_100.pth"
+  model_dict_file_causal_50: "models/vae/fin/betavae_lr_0.0001_epochs_80_batch_91_leaky_02_beta_0.5_feature_dim_199_lat_dim_50_optimiser_RMSprop.pth"
+  opt_dict_file_causal_50: "models/vae/fin/RMSprop_lr_0.0001_epochs_80_feature_dim_199_lat_dim_50.pth"

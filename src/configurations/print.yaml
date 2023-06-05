@@ -1,0 +1,26 @@
+color_grad:
+  green_grad: ["#d8ffc4", "#bbdfa7", "#9ebf89", "#81a06c", "#63804e", "#466031", 
+               "#294013", "#24380f", "#1e310b", "#192908", "#132204", "#0e1a00"]
+  red_grad: ["#fff1e3", "#efc6b0", "#df9b7d", "#cf6f4a", "#bf4417", "#ab3b14",
+             "#983210", "#84290d", "#70200a", "#5c1707", "#490e03", "#350500"]
+  brown_grad: ["#fffac3", "#efda9d", "#dfc077", "#cfa550",  "#bf8b2a", "#a97a24", 
+               "#93681e", "#7d5718", "#684512", "#52340c", "#3c2206", "#261100"]
+palette:
+  CB91_Green: "#294013"
+  CB91_Light_Green: "#bbdfa7"
+  CB91_Brown_Gray: "#816b51"
+  CB91_Red: "#84290d"
+  CB91_Brown: "#7d5a1b"
+  CB91_Purple: "#9D2EC5"
+  CB91_Violet: "#661D98"
+  CB91_Yellow: "#dfc077"
+
+  
+color_list_names: [CB91_Green, CB91_Light_Green, CB91_Brown_Gray,
+                   CB91_Red, CB91_Brown, CB91_Purple,
+                   CB91_Violet, CB91_Yellow]
+             
+color_list_hex: ["#294013", "#bbdfa7", "#816b51", "#84290d",
+                 "#7d5a1b", "#9D2EC5", "#661D98", "#dfc077"]
+                 
+fig_dpi: 200

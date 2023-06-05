@@ -1,0 +1,20 @@
+globals:
+  name: VariationalAutoencoder
+  model_name: ["100-50", "50-25", "100", "50", "25"]
+  model_type: "categorical"
+
+data:
+  generate: 1000
+  center: False
+  train: 0.7
+  test: 0.1
+  validate: 0.2
+  
+model:
+  epochs: 90
+  batch_size: 32
+  learning_rate: [0.001, 0.001, 0.001]
+  node_layers: [[100, 50, 25], [100, 50], [50, 25], [100], [50], [25]]
+  dense_activation: ["leaky_relu"]
+  latent_dimensions: [30, 25, 10, 5]
+  beta: 0.5
