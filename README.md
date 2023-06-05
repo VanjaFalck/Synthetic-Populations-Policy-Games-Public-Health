@@ -1,4 +1,4 @@
-## Synthetic Populations Using Deep Generative Methods on EU-SILC Data for Finland 2013
+## Synthetic Populations Using Deep Generative Methods on EU-SILC Data for Finland 2013 and Norway 2017-2020
 
 ### Deep Generative Methods
 Variational autoencoder and generative adversarial networks are
